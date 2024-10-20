@@ -115,10 +115,10 @@ To specify functions over linked lists, we will use the following _representatio
 
 ```coq
 Fixpoint list_rep (v: llist A) (xs: list A): hProp :=
-  match x with
+  match xs with
   | [] => v = lnil
   | hd :: x2 => ∃ tl l',
-     (l = lcons hd tl) ∗
+     (v = lcons hd tl) ∗
      (tl ↦ l') ∗
      list_rep l' xs'
    end.
