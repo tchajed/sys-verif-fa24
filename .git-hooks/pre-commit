@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "[pre-commit check]"
+
+# Check if pnpm is installed
+if ! [ -x "$(command -v pnpm)" ]; then
+  echo 'Error: pnpm is not installed.' >&2
+  echo 'Please install pnpm to run this pre-commit hook.' >&2
+  exit 1
+fi
+
+echo '[pre-commit] Running prettier check'
+
+# Run pnpm prettier --check .
+if ! pnpm prettier --check .; then
+  echo 'Prettier check failed. Please run "pnpm prettier --write ." to format your code.'
+  exit 1
+fi
+
+echo 'Prettier check passed.'
+
