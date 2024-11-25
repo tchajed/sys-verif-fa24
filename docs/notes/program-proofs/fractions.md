@@ -159,11 +159,11 @@ Furthermore, we don't have to split just `1` into `1/2 + 1/2`; a thread with a `
 
 In some situations a pointer is only ever going to be read-only. It would be nice to take advantage of this fact.
 
-It is possible to work with the permission `ro_ptsto l x := (∃ q, l ↦[uint64T] #x)`. `ro_ptsto` can be split into as many copies as needed. However, in Iris it is convenient to have a _persistent_ proposition, and unfortunately `ro_ptsto` is not persistent.
+It is possible to work with the permission `ro_ptsto l x := (∃ q, l ↦[uint64T]{#q} #x)`. `ro_ptsto` can be split into as many copies as needed. However, in Iris it is convenient to have a _persistent_ proposition, and unfortunately `ro_ptsto` is not persistent (since we cannot duplicate it infinitely many times, otherwise the combine of `⌜1/q⌝` of them will lead to an overflow of 1).
 
 As recent development in Iris called _discardable fractions_ has enabled persistent, fractional permissions, by changing how fractions are represented.
 
-The intuition is to create a new type `dfrac` that replaces `Qp` (recall that was a positive rational number). Intuitively, a `dfrac` is still like a positive rational, but it can also have a special "ε" value that represents an infinitesimal (but positive) fraction. It will be possible to obtain an "ε" fraction by _discarding_ some fraction, making it permanently impossible to recover the 1 permission, but retaining read-only permissions.
+The intuition is to create a new type `dfrac` that replaces `Qp` (recall that was a positive rational number). Intuitively, a `dfrac` is still like a positive rational, but it can also have a special "ε" value that represents an infinitesimal (but positive) fraction. It will be possible to obtain an "ε" fraction by _discarding_ some fraction, making it permanently impossible to recover the 1 permission, but retaining read-only permissions. A sketchy definition of "ε" is `∀q, ε+q ≜ q<1` or `ε+1 ⊢ False`.
 
 Let's see how this is realized in Iris.
 
