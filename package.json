@@ -21,7 +21,7 @@
     "mermaid": "^11.6.0",
     "prettier": "^3.5.3",
     "sass-embedded": "^1.89.0",
-    "vue": "^3.5.14",
+    "vue": "^3.5.16",
     "vuepress": "2.0.0-rc.22",
     "vuepress-theme-hope": "2.0.0-rc.87"
   },
