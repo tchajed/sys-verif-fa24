@@ -15,7 +15,7 @@
     "@vuepress/bundler-vite": "2.0.0-rc.22",
     "@vuepress/plugin-google-analytics": "2.0.0-rc.103",
     "@vuepress/plugin-search": "2.0.0-rc.102",
-    "@vuepress/plugin-shiki": "2.0.0-rc.105",
+    "@vuepress/plugin-shiki": "2.0.0-rc.106",
     "katex": "^0.16.22",
     "mathjax-full": "^3.2.2",
     "mermaid": "^11.6.0",
