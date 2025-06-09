@@ -12,8 +12,8 @@ importers:
         specifier: 2.0.0-rc.22
         version: 2.0.0-rc.22(@types/node@22.15.19)(sass-embedded@1.89.1)
       '@vuepress/plugin-google-analytics':
-        specifier: 2.0.0-rc.103
-        version: 2.0.0-rc.103(vuepress@2.0.0-rc.22(@vuepress/bundler-vite@2.0.0-rc.22(@types/node@22.15.19)(sass-embedded@1.89.1))(vue@3.5.16))
+        specifier: 2.0.0-rc.107
+        version: 2.0.0-rc.107(vuepress@2.0.0-rc.22(@vuepress/bundler-vite@2.0.0-rc.22(@types/node@22.15.19)(sass-embedded@1.89.1))(vue@3.5.16))
       '@vuepress/plugin-search':
         specifier: 2.0.0-rc.102
         version: 2.0.0-rc.102(vuepress@2.0.0-rc.22(@vuepress/bundler-vite@2.0.0-rc.22(@types/node@22.15.19)(sass-embedded@1.89.1))(vue@3.5.16))
@@ -961,8 +961,8 @@ packages:
     peerDependencies:
       vuepress: 2.0.0-rc.22
 
-  '@vuepress/plugin-google-analytics@2.0.0-rc.103':
-    resolution: {integrity: sha512-Xtz52iBM4+pyNT7iKtUpoNZkKOVcEA5g/d48qYS8xyEAohCTlqScY0pv5+0759lfJggYsXeE7Ijk9aqKrCkKkg==}
+  '@vuepress/plugin-google-analytics@2.0.0-rc.107':
+    resolution: {integrity: sha512-DuSjOR+aGYjHAsHoqUOGKuEA96mBaSMXx7dc3y91WYjGq64bt5By7V8CumPYN5ytD7evlutVhlJ7wNlfrmUp1w==}
     peerDependencies:
       vuepress: 2.0.0-rc.23
 
@@ -3624,7 +3624,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@vuepress/plugin-google-analytics@2.0.0-rc.103(vuepress@2.0.0-rc.22(@vuepress/bundler-vite@2.0.0-rc.22(@types/node@22.15.19)(sass-embedded@1.89.1))(vue@3.5.16))':
+  '@vuepress/plugin-google-analytics@2.0.0-rc.107(vuepress@2.0.0-rc.22(@vuepress/bundler-vite@2.0.0-rc.22(@types/node@22.15.19)(sass-embedded@1.89.1))(vue@3.5.16))':
     dependencies:
       vuepress: 2.0.0-rc.22(@vuepress/bundler-vite@2.0.0-rc.22(@types/node@22.15.19)(sass-embedded@1.89.1))(vue@3.5.16)
 
