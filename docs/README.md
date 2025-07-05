@@ -1,5 +1,5 @@
 ---
-title: "CS 839: Systems Verification"
+title: "CS 839: Systems Verification (Fall 2024)"
 shortTitle: "Home"
 icon: "circle-check"
 toc: false
