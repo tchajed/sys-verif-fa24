@@ -24,8 +24,8 @@
 |  |  | **Part 3: Concurrency** |
 | 16 | Mon Oct 28 | [Concurrency intro](./notes/concurrency.md) |
 | 17 | Wed Oct 30 | [Lock invariants](./notes/invariants.md) |
-| 18 | Mon Nov 4 | **No class** |
-| 19 | Wed Nov 6 | **No class** |
+|  | Mon Nov 4 | **No class** |
+|  | Wed Nov 6 | **No class** |
 | 18 | Mon Nov 11 | [Resource algebras](./notes/resource-algebra.md) |
 | 19 | Wed Nov 13 | [Ghost state](./notes/ghost_state.md) |
 |  | Thu Nov 14 | _[Assignment 3](./assignments/assignment3/) due (11pm)_ |
